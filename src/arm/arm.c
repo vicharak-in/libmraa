@@ -18,6 +18,7 @@
 #include "arm/raspberry_pi.h"
 #include "arm/adlink_ipi.h"
 #include "arm/siemens/iot2050.h"
+#include "arm/vaaman.h"
 #include "mraa_internal.h"
 
 
@@ -102,6 +103,10 @@ mraa_arm_platform()
             platform_type = MRAA_ADLINK_IPI;
         else if (mraa_file_contains("/proc/device-tree/model", "SIMATIC IOT2050"))
             platform_type = MRAA_SIEMENS_IOT2050;
+        else if (mraa_file_contains("/proc/device-tree/model",
+                                    "Vicharak RK3399 VAAMAN VO.3 ANDROID") ||
+                 mraa_file_contains("/proc/device-tree/model", "Vicharak RK3399 VAAMAN VO.3 LINUX"))
+            platform_type = MRAA_VAAMAN;
     }
 
     switch (platform_type) {

@@ -69,6 +69,7 @@ typedef enum {
     MRAA_UPXTREME = 24,             /**< The UPXTREME Board */
     MRAA_INTEL_ILK = 25,            /**< Intel Learning Kit */
     MRAA_SIEMENS_IOT2050 = 26,      /**< Siemens IOT2050 board */
+    MRAA_VAAMAN = 27,               /**< Vicharak Vaaman */
     // USB platform extenders start at 256
     MRAA_FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */
 
@@ -243,6 +244,40 @@ typedef enum {
     MRAA_RASPBERRY_WIRING_PIN28 = 38,
     MRAA_RASPBERRY_WIRING_PIN29 = 40
 } mraa_raspberry_wiring_t;
+
+
+/**
+ *  Vicharak Vaaman GPIO numbering enum
+ */
+typedef enum {
+    MRAA_VAAMAN_PIN3 = 3,
+    MRAA_VAAMAN_PIN5 = 5,
+    MRAA_VAAMAN_PIN7 = 7,
+    MRAA_VAAMAN_PIN8 = 8,
+    MRAA_VAAMAN_PIN10 = 10,
+    MRAA_VAAMAN_PIN11 = 11,
+    MRAA_VAAMAN_PIN12 = 12,
+    MRAA_VAAMAN_PIN13 = 13,
+    MRAA_VAAMAN_PIN15 = 15,
+    MRAA_VAAMAN_PIN16 = 16,
+    MRAA_VAAMAN_PIN18 = 18,
+    MRAA_VAAMAN_PIN19 = 19,
+    MRAA_VAAMAN_PIN21 = 21,
+    MRAA_VAAMAN_PIN22 = 22,
+    MRAA_VAAMAN_PIN23 = 23,
+    MRAA_VAAMAN_PIN24 = 24,
+    MRAA_VAAMAN_PIN27 = 27,
+    MRAA_VAAMAN_PIN28 = 28,
+    MRAA_VAAMAN_PIN29 = 29,
+    MRAA_VAAMAN_PIN31 = 31,
+    MRAA_VAAMAN_PIN32 = 32,
+    MRAA_VAAMAN_PIN33 = 33,
+    MRAA_VAAMAN_PIN35 = 35,
+    MRAA_VAAMAN_PIN36 = 36,
+    MRAA_VAAMAN_PIN37 = 37,
+    MRAA_VAAMAN_PIN38 = 38,
+    MRAA_VAAMAN_PIN40 = 40
+} mraa_vaaman_wiring_t;
 
 /**
  * MRAA return codes
